@@ -1,0 +1,9 @@
+{
+    "Title": "hoge",
+    "Time": "00 19",
+    "SubTitle": "hoge1",
+    "Message": "fuga",
+    "icon": "/path/to/icon",
+    "Open": "https://github.com/hachi-n",
+    "Sound": "default"
+}

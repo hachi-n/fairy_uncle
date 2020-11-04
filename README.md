@@ -31,31 +31,31 @@
 ```
 {
     "NotificationName1": {
-        Title: "hoge",
-        Time: "1900",
-        SubTitle: "hoge1",
-        Message: "fuga",
-        icon: "/path/to/icon",
-        Open: "https://github.com/hachi-n",
-        Sound: "defalult" #Blow,Bottle,Frog,Funk,Glass,Hero,Morse,Ping,Pop,Purr,Sosumi,Tink
+        "Title": "hoge",
+        "Time": "00 19",
+        "SubTitle": "hoge1",
+        "Message": "fuga",
+        "icon": "/path/to/icon",
+        "Open": "https://github.com/hachi-n",
+        "Sound": "default" #Blow,Bottle,Frog,Funk,Glass,Hero,Morse,Ping,Pop,Purr,Sosumi,Tink
     },
     "NotificationName2": {
-        Title: "hoge",
-        Time: "1900",
-        SubTitle: "hoge1",
-        Message: "fuga",
-        icon: "/path/to/icon",
-        Open: "https://github.com/hachi-n",
-        Sound: "defalult" #Blow,Bottle,Frog,Funk,Glass,Hero,Morse,Ping,Pop,Purr,Sosumi,Tink
+        "Title": "hoge",
+        "Time": "00 19",
+        "SubTitle": "hoge1",
+        "Message": "fuga",
+        "icon": "/path/to/icon",
+        "Open": "https://github.com/hachi-n",
+        "Sound": "default" #Blow,Bottle,Frog,Funk,Glass,Hero,Morse,Ping,Pop,Purr,Sosumi,Tink
     },
     "NotificationName3": {
-        Title: "hoge",
-        Time: "1900",
-        SubTitle: "hoge1",
-        Message: "fuga",
-        icon: "/path/to/icon",
-        Open: "https://github.com/hachi-n",
-        Sound: "defalult" #Blow,Bottle,Frog,Funk,Glass,Hero,Morse,Ping,Pop,Purr,Sosumi,Tink
+        "Title": "hoge",
+        "Time": "00 19",
+        "SubTitle": "hoge1",
+        "Message": "fuga",
+        "icon": "/path/to/icon",
+        "Open": "https://github.com/hachi-n",
+        "Sound": "default" #Blow,Bottle,Frog,Funk,Glass,Hero,Morse,Ping,Pop,Purr,Sosumi,Tink
     }
 }
 ```
