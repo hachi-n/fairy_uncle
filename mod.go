@@ -3,6 +3,7 @@ package fairy_uncle
 import (
 	"fmt"
 	"github.com/hachi-n/fairy_uncle/lib/models"
+	"time"
 )
 
 func AddRecord(key, jsonStr string) error {
@@ -33,7 +34,7 @@ func RemoveRecord(key string) error {
 
 func ShowRecord(key string) error {
 	fairyUncleData := models.LoadFairyUncleData()
-	fairyUncle := fairyUncleData.Select(key)
+	fairyUncle := fairyUncleData.Find(key)
 	if fairyUncle == nil {
 		return fmt.Errorf("No Record Error. Key: %s\n", key)
 	}
@@ -55,7 +56,28 @@ func ListConfig() error {
 
 func Notify() error {
 	fairyUncleData := models.LoadFairyUncleData()
-	_ = fairyUncleData
+
+	options := map[string]string{
+		"actionTime": time.Now().Format(time.RFC3339),
+		"tolerance":  "5",
+	}
+
+	fairyUncles, err := fairyUncleData.Select(options)
+	if err != nil {
+		return err
+	}
+
+	if fairyUncles == nil {
+		fmt.Println("No Record.")
+		return nil
+	}
+
+	for _, fairyUncle := range fairyUncles {
+		err := fairyUncle.Notify()
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
 
 	return nil
 }
