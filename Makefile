@@ -12,3 +12,8 @@ build:
 
 clean:
 	$(MAKE) go-clean
+
+install:
+	$(MAKE) build
+	cp -pr ./pkg/fairy_uncle /usr/local/bin/
+
